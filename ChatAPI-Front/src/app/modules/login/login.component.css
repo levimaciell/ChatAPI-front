@@ -1,0 +1,41 @@
+.login-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-form{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 3%;
+    gap: 1.5rem;
+}
+.login-form-title{
+    color: yellow;
+}
+.login-form-field{
+    height: 2rem;
+    color: yellow;
+    border: 1px solid yellow;
+    background-color: black;
+}
+::placeholder{
+    color: yellow;
+}
+.login-form-submit{
+    height: 2rem;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.login-form-signup{
+    color: yellow;
+}
+.login-form-signup-link{
+    color: rgb(255, 98, 0);
+    text-decoration: none;
+}
