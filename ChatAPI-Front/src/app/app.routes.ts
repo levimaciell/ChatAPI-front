@@ -5,6 +5,10 @@ import { SignupPageComponent } from './modules/authentication/pages/signup-page/
 export const routes: Routes = [
     {
         path:'',
+        component: LoginPageComponent
+    },
+    {
+        path:'sign-up',
         component: SignupPageComponent
     }
 ];
