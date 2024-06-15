@@ -1,0 +1,21 @@
+<section class="signup-section">
+
+
+    <form (submit)="signup()"class="signup-form">
+        <h2 class="signup-form-title">Cadastre-se</h2>
+
+        <input class="signup-form-field" type="text" placeholder="Digite seu nome de usuário" [(ngModel)]="username" name="usename">
+        <input class="signup-form-field" type="text" placeholder="Digite seu email" [(ngModel)]="email" name="email">
+        <input class="signup-form-field" type="password" placeholder="Digite sua senha"[(ngModel)]="password" name="password">
+    
+        <button class="signup-form-submit">Entrar</button>
+        
+        <p class="signup-form-redirect">
+            Já possui conta?
+            <a routerLink="" class="signup-form-redirect-link">
+                Faça login!
+            </a>
+        </p>
+        
+    </form>
+</section>
