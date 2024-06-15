@@ -1,4 +1,17 @@
-.main-content{
-    margin-top: -10%;
-    
+:host{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    app-header{
+        height: 40%;
+    }
+
+    app-footer{
+        height: 8%;
+    }
+
 }
+

@@ -9,7 +9,8 @@ import { RouterOutlet } from '@angular/router';
   ],
   template: `
   <router-outlet />
-  `
+  `,
+  styleUrl: './app.css'
 })
 export class AppComponent {
   title = 'ChatAPI-Front';
