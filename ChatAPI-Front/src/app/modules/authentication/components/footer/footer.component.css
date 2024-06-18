@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:host{
+    --footer-background-color:#543310;
+    --footer-text-color: #F8F4E1;
+    --font: "Montserrat";
+}
+
+.footer-component{
+    background-color: var(--footer-background-color);
+    height: 100%;
+    color: var(--footer-text-color);
+    font-family: var(--font);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+
+}

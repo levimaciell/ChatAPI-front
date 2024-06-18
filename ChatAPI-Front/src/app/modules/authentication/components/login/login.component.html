@@ -1,10 +1,9 @@
 <section class="login-section">
 
-
     <form (submit)="login()"class="login-form">
         <h2 class="login-form-title">Login</h2>
 
-        <input class="login-form-field" type="text" placeholder="Digite seu login" [(ngModel)]="username" name="usename">
+        <input class="login-form-field" type="text" placeholder="Digite seu nome de usuário" [(ngModel)]="username" name="usename">
         <input class="login-form-field" type="password" placeholder="Digite sua senha"[(ngModel)]="password" name="password">
     
         <button class="login-form-submit">Entrar</button>
@@ -12,9 +11,9 @@
         <p class="login-form-signup">
             Novo aqui?
             <a routerLink="/sign-up" class="login-form-signup-link">
-                Se cadastre!
+                Cadastre-se!
             </a>
         </p>
-        
     </form>
+    
 </section>
