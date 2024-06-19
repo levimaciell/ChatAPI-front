@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:host{
+    --message-background-color: #543310;
+    --message-text-color: #F8F4E1;
+    --text-font: "Montserrat";
+    --text-font-size: 0.92rem;
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--message-background-color);
+
+    textarea{
+        background-color: var(--message-text-color);
+        color: var(--message-background-color);
+        font-weight: 700;
+
+        font-family: var(--text-font);
+        font-size: var(--text-font-size);
+        padding: 0.5%;
+        width: 45%;
+        resize: none;
+        outline: none;
+    }
+    
+    button{
+        font-family: var(--text-font);
+        font-size: var(--text-font-size);
+        background-color: var(--message-text-color);
+        color: var(--message-background-color);
+        font-weight: 700;
+        padding: 1%;
+        border: 1px solid black;
+    }
+}

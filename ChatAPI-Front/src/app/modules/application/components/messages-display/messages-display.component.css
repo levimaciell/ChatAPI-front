@@ -1,0 +1,23 @@
+:host{
+
+    --message-background-color: #543310;
+    --message-text-color: #F8F4E1;
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--message-background-color);
+
+
+    .messages{
+        padding: 3%;
+        width: 100%;
+        height: 90%;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--message-text-color) var(--message-background-color); 
+    }
+    
+    app-message-input{
+        height: 10%;
+    }
+}
