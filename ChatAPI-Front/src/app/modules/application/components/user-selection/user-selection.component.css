@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:host{
+    --message-background-color: #543310;
+    --message-text-color: #F8F4E1;
+    --text-font: "Montserrat";
+    --text-font-size: 0.92rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--message-text-color) var(--message-background-color); 
+    padding: 1%;
+
+    h2{
+        font-family: var(--text-font);
+        font-weight: 700;
+        color: var(--message-background-color);
+    }
+
+}
