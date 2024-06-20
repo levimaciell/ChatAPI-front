@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { AuthenticationService } from '../../../../services/authentication.service';
 
 @Component({
   selector: 'app-signup',
@@ -10,17 +11,16 @@ import { RouterLink } from '@angular/router';
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
+
+  #service = inject(AuthenticationService);
+
   public username = "";
   public email = "";
   public password = "";
 
   signup(){
-    let json = {
-      "username": this.username,
-      "email": this.email,
-      "password": this.password
-    };
-    
-    console.log(json);
+
+    this.#service.createUser$(this.username, this.email, this.password).subscribe();
+    console.log("hoorat")
   }
 }
